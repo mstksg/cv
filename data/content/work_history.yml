@@ -7,7 +7,7 @@
     :end:
       :year: 2010
       :month: 4
-    :company: Nexa Technologies, Inc
+    :organization: Nexa Technologies, Inc
     :title: Quality Assurance Division Intern
     :description:
       Assisted with the architecture and implementation of a large-scale
@@ -22,7 +22,7 @@
     :end:
       :year: 2011
       :month: 2
-    :company: UCSD Department of Physics
+    :organization: UCSD Department of Physics
     :title: Back-end Testing Consultant
     :description:
       Offered consulting services for the construction of regression testing
@@ -35,6 +35,6 @@
     :end:
       :year: 2012
       :month: 6
-    :company: Harbor Presbyterian Church College Ministry
+    :organization: Harbor Presbyterian Church College Ministry
     :title: Core Leadership/Logistical Coordinator
 

@@ -31,51 +31,48 @@
         %h2
           Education
         %ul
-          %li
-            %h5.cv-edu_source
-              University of California, San Diego
-            %h4.cv-edu_title
-              B.S. Physics w/ Specialization in Computational Physics
-            %h6.cv-edu_date
-              Spring, 2013
+          - data[:education].each do |edu|
+            %li
+              %h5.cv-edu_institution= edu[:institution]
+              %h4.cv-edu_title= edu[:title]
+              %h6.cv-edu_date= edu[:date]
 
     #cv-work_history.col.span_1_of_4.col_right.span_1_of_3
       %h2
         Work History
       %ul
-        - (0..4).each do |year|
+        - data[:work_history].each do |work|
           %li
-            %h3.cv-work_year= 2013-year
-            %h4.cv-work_org= fake_company.name
-            %h5.cv-work_title= fake_person.title
-            %p.cv-work_desc= fake_paragraph
-            .cv-work_date
-              Oct '#{13-year} to May '#{13-year+1}
+            %h3.cv-work_year= work[:year]
+            %h4.cv-work_org= work[:organization]
+            %h5.cv-work_title= work[:title]
+            %p.cv-work_desc= work[:description]
+            .cv-work_date= "#{work[:from]} to #{work[:to]}"
 
     #cv-skills.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
         %h2
           Skills
         %ul
-          - 12.times do
-            %li=fake_person.title.split.sample
+          - data[:skills].each do |skill|
+            %li= skill
 
     #cv-project_history.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
         %h2
           Personal Project History
         %ul
-          - 3.times do
+          - data[:projects].each do |project|
             %li
-              %h6.cv-proj_field= fake_field
-              %h4.cv-proj_title= fake_company.catch_phrase
-              %p.cv-proj_desc= fake_paragraph 2
+              %h6.cv-proj_field= project[:field]
+              %h4.cv-proj_title= project[:title]
+              %p.cv-proj_desc= project[:description]
 
     #cv-qualities.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
         %h2
           Qualities
-        %p.cv-qualities_text= fake_paragraph
+        %p.cv-qualities_text= data[:qualities]
 
 :javascript
   window.data.watch = #{watch};
