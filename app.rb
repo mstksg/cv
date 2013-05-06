@@ -5,11 +5,6 @@ class WebCV < Sinatra::Base
     set :public_dir, "public"
     set :views, "views"
     set :server, "thin"
-
-    # enable :sessions
-    # set :session_secret, "sosecret" 
-    # set :sockets, []
-    # set :dirhash, ""
   end
 
   configure :production do

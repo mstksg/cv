@@ -7,7 +7,6 @@ require 'yaml'
 require 'pathname'
 require 'json'
 require 'logger'
-# require 'sinatra-websocket'
 
 # require_relative 'helpers/init'
 
