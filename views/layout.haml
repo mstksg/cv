@@ -10,12 +10,16 @@
     %link{:href => url('/css/html5reset.css'), :rel => 'stylesheet', :type => 'text/css'}
     %link{:href => url('/css/col.css'), :rel => 'stylesheet', :type => 'text/css'}
     %link{:href => url('/css/cols/4cols.css'), :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => url('/css/cols/3cols.css'), :rel => 'stylesheet', :type => 'text/css'}
     %link{:href => url('/css/main.css'), :rel => 'stylesheet', :type => 'text/css'}
-    %link{:href => url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Shadows+Into+Light|Raleway'), :rel => 'stylesheet', :type => 'text/css' }
+    %link{:href => url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Shadows+Into+Light|Raleway:100,400'), :rel => 'stylesheet', :type => 'text/css' }
 
     %script{:type => 'text/javascript',
       :src => '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
     %script{:type => 'text/javascript', :src => url('/js/lib/jquery.rm.js') }
+
+    :javascript
+      window.data = {};
 
   %body
     #header_container.section.group

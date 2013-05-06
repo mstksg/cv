@@ -8,7 +8,7 @@ require 'pathname'
 require 'json'
 require 'logger'
 
-# require_relative 'helpers/init'
+require_relative 'helpers/init'
 
 if __FILE__ == $0
   require 'pry'

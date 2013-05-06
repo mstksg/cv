@@ -1,3 +1,5 @@
+var CHECKRATE = 1000;
+
 var ws;
 var dirhash = "";
 
@@ -14,7 +16,13 @@ process_change = function(d) {
     document.location.reload();
   }
   dirhash = d.dirhash;
-  setTimeout(check_change,3000);
+  setTimeout(check_change,CHECKRATE);
 }
 
-check_change();
+$.ajaxSetup({
+  error: function() { setTimeout(check_change,CHECKRATE); }
+});
+
+if (window.data.watch) {
+  check_change();
+}

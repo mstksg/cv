@@ -26,61 +26,57 @@
 
   #cv-main_section.section.group
 
-    #cv-education.col.span_3_of_4.col_left
-      %h2
-        Education
-      %ul
-        %li
-          .cv-edu_title
-            B.S. Physics w/ Specialization in Computational Physics
-          .cv-edu_source
-            University of California, San Diego
-          .cv-edu_date
-            Spring, 2013
+    #cv-education.col.span_3_of_4.col_left.span_2_of_3.cv-box
+      .cv-card
+        %h2
+          Education
+        %ul
+          %li
+            .cv-edu_title
+              B.S. Physics w/ Specialization in Computational Physics
+            .cv-edu_source
+              University of California, San Diego
+            .cv-edu_date
+              Spring, 2013
 
 
-    #cv-work_history.col.span_1_of_4.col_right
+    #cv-work_history.col.span_1_of_4.col_right.span_1_of_3
       %h2
         Work History
       %ul
-        %li
-          %h3.cv-work_year
-            2013
-          %h4.cv-work_title
-            UCSD Research
-          .cv-work_desc
-            I do research. Loreum ipsum dolores huetra etc. what am i doing
-            this is all nonsense isnt it oh well.
+        - (0..4).each do |year|
+          %li
+            %h3.cv-work_year= 2013-year
+            %h4.cv-work_org= fake_company.name
+            %h5.cv-work_title= fake_person.title
+            %p.cv-work_desc= fake_paragraph
 
-    #cv-skills.col.span_3_of_4.col_left
-      %h2
-        Skills
-      %ul
-        %li
-          Java
-        %li
-          C++
-        %li
-          Javascript/Node
-        %li
-          Unix/Linux/Bash
-        %li
-          SQL
-        %li
-          Python
-        %li
-          Ruby
-        %li
-          JQuery/JQuery UI
-        %li
-          Haskell
+    #cv-skills.col.span_3_of_4.col_left.span_2_of_3.cv-box
+      .cv-card
+        %h2
+          Skills
+        %ul
+          - 12.times do
+            %li=fake_person.title.split.sample
 
-    #cv-project_history.col.span_3_of_4.col_left
-      %h2
-        Project History
+    #cv-project_history.col.span_3_of_4.col_left.span_2_of_3.cv-box
+      .cv-card
+        %h2
+          Personal Project History
+        %ul
+          - 3.times do
+            %li
+              %h6.cv-proj_field= fake_field
+              %h4.cv-proj_title= fake_company.catch_phrase
+              %p.cv-proj_desc= fake_paragraph 2
 
-    #cv-qualities.col.span_3_of_4.col_left
-      %h2
-        Qualities
+    #cv-qualities.col.span_3_of_4.col_left.span_2_of_3.cv-box
+      .cv-card
+        %h2
+          Qualities
+        %p.cv-qualities_text= fake_paragraph
+
+:javascript
+  window.data.watch = #{watch};
 
 %script{:type => 'text/javascript', :src => url('/js/page/cv.js') }
