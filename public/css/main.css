@@ -18,12 +18,10 @@ body {
   font-family: 'roboto slab', 'serif';
   font-weight: 400;
 }
-
 p {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   line-height: 130%;
 }
-
 
 #header_container, #main_container, #footer_container {
   width: 100%;
@@ -32,6 +30,15 @@ p {
 #header_content, #main_content, #footer_content {
   width: 90%;
   margin: 0 auto;
+}
+
+#footer_container {
+  margin-top: 1.5rem;
+  padding: 1.5rem 0 6rem 0;
+  background-color: rgba(181,216,235,0.2);
+}
+#footer_content {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1267px) {
@@ -52,49 +59,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 6em;
+  font-size: 8rem;
   font-weight: 100;
 }
+@media only screen and (max-width: 860px) { h1 { font-size: 6rem; } }
+@media only screen and (max-width: 680px) { h1 { font-size: 5rem; } }
 h2 {
   /* font-family: 'Shadows Into Light', cursive; */
   font-family: 'Roboto Slab', serif;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.5em
+  margin-bottom: 0.5rem
 }
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 100;
 }
 h4 {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.3rem;
 }
 h5 {
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.3rem;
 }
 h6 {
-  font-family: 'Roboto Slab', seif;
-  font-size: 0.75em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
   font-weight: 400;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
   text-shadow: 1px 1px 0 #fafafa;
 }
 
 #cv-photo {
   display: inline-block;
-  height: 10em;
+  height: 10rem;
   margin: 0 0;
 }
 #cv-photo_container {
   text-align: right;
-  height: 10em;
+  height: 10rem;
   overflow: hidden;
 }
 
@@ -113,7 +122,7 @@ h6 {
   overflow: hidden;
   width: 40px;
   height: 40px;
-  margin: 0 0.1em;
+  margin: 0 0.1rem;
   display: inline-block;
   background-size: 40px 40px;
 }
@@ -127,12 +136,19 @@ h6 {
 .cv-box {
 }
 .cv-card {
-  padding: 1em;
+  padding: 1.2rem;
 }
 
 #cv-education {
   background-color: rgba(251,252,208,0.5);
 }
+#cv-education li {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+/* .cv-edu_title { */
+/*   font */
+/* } */
 
 #cv-work_history {
   text-align: right;
@@ -141,77 +157,98 @@ h6 {
   display: none;
 }
 #cv-work_history li {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+#cv-work_history p {
+  margin-bottom: 0.2rem;
+}
+.cv-work_date {
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 #cv-skills {
   background-color: rgba(203,228,237,0.25);
 }
 #cv-skills ul {
-  margin: 1em 0;
+  margin: 1rem 0;
   text-align: center;
+  cursor: default;
 }
 #cv-skills li {
   display: inline-block;
-  padding: 0.3em 0.75em;
-  margin: 0.3em;
+  padding: 0.3rem 0.75rem;
+  margin: 0.3rem;
   margin-bottom: 0;
-  margin-top: 0.6em;
+  margin-top: 0.6rem;
   background: #CDCFB7;
   border-bottom: #989987 1px solid;
   border-right: #989987 1px solid;
   color: #191A17;
   text-shadow: 1px 1px 0 #E3E6CB;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  /* font-family: sans-serif; */
-  font-size: 1em;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  font-family: 'Raleway', sans-serif;
+  cursor: default;
 }
 
 #cv-project_history {
   background-color: rgba(254,67,101,0.05);
 }
 #cv-project_history li {
-  margin: 0.5em 0.25em;
-  padding: 0.25em;
+  margin: 0.5rem 0.25rem;
+  padding: 0.25rem;
+}
+#cv-project_history p {
+  text-indent: 3%;
 }
 
 #cv-qualities {
   background-color: rgba(73,66,61,0.1);
 }
 
+#cv-qualities p {
+  text-indent: 5%;
+  margin-bottom: 0.5rem
+}
+
 @media only screen and (max-width: 480px) {
-  h1 {
-    font-size: 4em;
+  #footer_container {
+    margin: 0 0;
   }
-  h1, h2, h3, h4, h5 {
+  h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
-  /* #cv-work_history h2 { */
-  /*   display: inline; */
-  /* } */
   #cv-photo_container {
     background-color: rgba(139,122,94,0.5);
     text-align: center;
   }
   #cv-photo {
     height: auto;
+    width: 50%;
   }
   #cv-photo_container, .cv-box {
     width: 100%;
     height: auto;
-    padding: 0.5em 5.5%;
-    margin-right: -5.5%;
-    margin-left: -5.5%;
+    padding: 0.5rem 5.5%;
+    margin: 0 -5.5%;
   }
   /* #cv-work_history { */
   /*   text-align: center; */
   /* } */
-  #cv-photo {
-    width: 50%;
-  }
-  .cv-work_desc {
+  /* .cv-work_desc { */
+  /*   text-align: center; */
+  /* } */
+  p, .cv-work_date {
     text-align: center;
+    text-indent: 0;
+  }
+  .col {
+    margin-left: -5.5% !important;
+  }
+  #cv-name {
+    padding-left: 5.5%;
   }
 }
 

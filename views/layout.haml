@@ -16,7 +16,6 @@
 
     %script{:type => 'text/javascript',
       :src => '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
-    %script{:type => 'text/javascript', :src => url('/js/lib/jquery.rm.js') }
 
     :javascript
       window.data = {};
@@ -28,4 +27,7 @@
       #main_content
         =yield
     #footer_container.section.group
-      #header_content
+      #footer_content
+        %h6
+          &copy; Justin Le 2013
+

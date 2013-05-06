@@ -23,6 +23,11 @@ $.ajaxSetup({
   error: function() { setTimeout(check_change,CHECKRATE); }
 });
 
-if (window.data.watch) {
-  check_change();
-}
+
+$(document).ready(function() {
+  // $('h1').fitText();
+  if (window.data.watch) {
+    check_change();
+  }
+  // $('#cv-body').responsiveMeasure();
+});

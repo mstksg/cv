@@ -32,13 +32,12 @@
           Education
         %ul
           %li
-            .cv-edu_title
-              B.S. Physics w/ Specialization in Computational Physics
-            .cv-edu_source
+            %h5.cv-edu_source
               University of California, San Diego
-            .cv-edu_date
+            %h4.cv-edu_title
+              B.S. Physics w/ Specialization in Computational Physics
+            %h6.cv-edu_date
               Spring, 2013
-
 
     #cv-work_history.col.span_1_of_4.col_right.span_1_of_3
       %h2
@@ -50,6 +49,8 @@
             %h4.cv-work_org= fake_company.name
             %h5.cv-work_title= fake_person.title
             %p.cv-work_desc= fake_paragraph
+            .cv-work_date
+              Oct '#{13-year} to May '#{13-year+1}
 
     #cv-skills.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
@@ -79,4 +80,6 @@
 :javascript
   window.data.watch = #{watch};
 
+-# %script{:type => 'text/javascript', :src => url('/js/lib/jquery.rm.js') }
+-# %script{:type => 'text/javascript', :src => url('/js/lib/jquery.fittext.js') }
 %script{:type => 'text/javascript', :src => url('/js/page/cv.js') }
