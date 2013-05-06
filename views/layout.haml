@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{:name => "viewport", :content => "width=device-width,initial-scale=1.0"}/
+    -# %meta{:'http-equiv' => "refresh", :content => "10"}/
+    -# %meta{:name => "robots", :content => "noindex"}/
+    %title
+      Justin Le
+
+    %link{:href => url('/css/html5reset.css'), :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => url('/css/col.css'), :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => url('/css/cols/4cols.css'), :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => url('/css/main.css'), :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Shadows+Into+Light|Raleway'), :rel => 'stylesheet', :type => 'text/css' }
+
+    %script{:type => 'text/javascript',
+      :src => '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => url('/js/lib/jquery.rm.js') }
+
+  %body
+    #header_container.section.group
+      #header_content
+    #main_container.section.group
+      #main_content
+        =yield
+    #footer_container.section.group
+      #header_content

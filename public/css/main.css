@@ -1,0 +1,131 @@
+/* Smallest Conch
+FFEFD3
+Thought Processby loveSKE
+FFFEE4
+Not You, It's Meby loveSKE
+D0ECEA
+figuresby artsykerley
+9FD6D2
+761~esspresso HL/Syrby DESIGNJUNKEE
+8B7A5E
+*/ 
+
+/* containers */
+body {
+  background-color: #ffefd3;
+  background-image: url('/media/img/bg.jpg');
+  color: #2B2521;
+}
+
+
+#header_container, #main_container, #footer_container {
+  width: 100%;
+}
+
+#header_content, #main_content, #footer_content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1066px) {
+  #header_content, #main_content, #footer_content {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* content */
+h1, h2, h3, h4 {
+  font-weight: normal;
+  text-shadow: 1px 2px 0 #fff;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 6em;
+}
+h2 {
+  /* font-family: 'Shadows Into Light', cursive; */
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+}
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4em;
+}
+h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#cv-photo {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#cv-contacts {
+  text-align: center;
+}
+#cv-contacts a {
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+#cv-contacts li {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.1em;
+  display: inline-block;
+  background-size: 40px 40px;
+}
+#cv-contact_fb { background: url('/media/icon/fb.png')  }
+#cv-contact_li { background: url('/media/icon/li.png')  }
+#cv-contact_ma { background: url('/media/icon/ma.png')  }
+#cv-contact_fb:hover, #cv-contact_fb:active { background: url('/media/icon/fb_hover.png')  }
+#cv-contact_li:hover, #cv-contact_li:active { background: url('/media/icon/li_hover.png')  }
+#cv-contact_ma:hover, #cv-contact_ma:active { background: url('/media/icon/ma_hover.png')  }
+
+#cv-work_history {
+  text-align: right;
+}
+#cv-work_history h2 {
+  display: none;
+}
+
+#cv-skills li {
+  display: inline-block;
+  padding: 0.3em;
+  margin: 0.3em;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 4em;
+  }
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  #cv-photo_container {
+    background: #8B7A5E;
+    width: 100%;
+    padding: 0.5em 5.5%;
+    margin-right: -5.5%;
+  }
+  #cv-photo {
+    width: 50%;
+  }
+  .cv-work_desc {
+    text-align: center;
+  }
+}
+

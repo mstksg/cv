@@ -1,0 +1,86 @@
+#cv-body
+
+  #cv-title_section.section.group
+    #cv-name.col.span_3_of_4.col_left
+      %h1
+        Justin Le
+    #cv-photo_container.col.col_right.span_1_of_4
+      %img#cv-photo{ :src => url('http://placehold.it/300x300.png') }
+    #cv-contacts.col.col_left.span_3_of_4
+      %ul
+        %li#cv-contact_fb
+          %a{ :href => url('http://www.facebook.com/mstksg'),
+              :target => "_blank",
+              :title => "Facebook" }
+            facebook
+        %li#cv-contact_li
+          %a{ :href => url('http://www.linkedin.com/profile/view?id=79014347'),
+              :target => "_blank",
+              :title => "LinkedIn" }
+            linkedin
+        %li#cv-contact_ma
+          %a{ :href => url('mailto:justin@jle0.com'),
+              :target => "_blank",
+              :title => "E-mail" }
+            e-mail
+
+  #cv-main_section.section.group
+
+    #cv-education.col.span_3_of_4.col_left
+      %h2
+        Education
+      %ul
+        %li
+          .cv-edu_title
+            B.S. Physics w/ Specialization in Computational Physics
+          .cv-edu_source
+            University of California, San Diego
+          .cv-edu_date
+            Spring, 2013
+
+
+    #cv-work_history.col.span_1_of_4.col_right
+      %h2
+        Work History
+      %ul
+        %li
+          %h3.cv-work_year
+            2013
+          %h4.cv-work_title
+            UCSD Research
+          .cv-work_desc
+            I do research. Loreum ipsum dolores huetra etc. what am i doing
+            this is all nonsense isnt it oh well.
+
+    #cv-skills.col.span_3_of_4.col_left
+      %h2
+        Skills
+      %ul
+        %li
+          Java
+        %li
+          C++
+        %li
+          Javascript/Node
+        %li
+          Unix/Linux/Bash
+        %li
+          SQL
+        %li
+          Python
+        %li
+          Ruby
+        %li
+          JQuery/JQuery UI
+        %li
+          Haskell
+
+    #cv-project_history.col.span_3_of_4.col_left
+      %h2
+        Project History
+
+    #cv-qualities.col.span_3_of_4.col_left
+      %h2
+        Qualities
+
+%script{:type => 'text/javascript', :src => url('/js/page/cv.js') }
