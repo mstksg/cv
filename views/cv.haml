@@ -35,7 +35,7 @@
             %li
               %h5.cv-edu_institution= edu[:institution]
               %h4.cv-edu_title= edu[:title]
-              %h6.cv-edu_date= edu[:date]
+              %h6.cv-edu_date= "#{edu[:date]}#{edu[:comments] ? " &mdash; #{edu[:comments]}" : ""}"
 
     #cv-work_history.col.span_1_of_4.col_right.span_1_of_3
       %h2

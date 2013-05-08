@@ -1,40 +1,43 @@
 ---
-:work_history:
-  - :name: nexa
-    :start:
-      :year: 2009
-      :month: 10
-    :end:
-      :year: 2010
-      :month: 4
-    :organization: Nexa Technologies, Inc
-    :title: Quality Assurance Division Intern
-    :description:
-      Assisted with the architecture and implementation of a large-scale
-      automated regression testing framework.  Tackled practical issues of
-      scaling, research and integration of software libraries, and working
-      with large teams, as well as sheer amounts of heavy scripting and
-      programming.
-  - :name: lhc
-    :start:
-      :year: 2010
-      :month: 9
-    :end:
-      :year: 2011
-      :month: 2
-    :organization: UCSD Department of Physics
-    :title: Back-end Testing Consultant
-    :description:
-      Offered consulting services for the construction of regression testing
-      system for the scheduling manager and interface for a massively parallel
-      grid computing network.
-  - :name: harbor
-    :start:
-      :year: 2011
-      :month: 9
-    :end:
-      :year: 2012
-      :month: 6
-    :organization: Harbor Presbyterian Church College Ministry
-    :title: Core Leadership/Logistical Coordinator
-
+- :name: nexa
+  :start:
+    :year: 2009
+    :month: 10
+  :end:
+    :year: 2010
+    :month: 4
+  :organization: Nexa Technologies, Inc
+  :title: Quality Assurance Division Intern
+  :description:
+    Assisted with the architecture and implementation of a large-scale
+    automated regression testing framework.  Tackled practical issues of
+    scaling, research and integration of software libraries, and working
+    with large teams, as well as sheer amounts of heavy scripting and
+    programming.
+- :name: lhc
+  :start:
+    :year: 2010
+    :month: 9
+  :end:
+    :year: 2011
+    :month: 2
+  :organization: UCSD Department of Physics
+  :title: Back-end Testing Consultant
+  :description:
+    Offered consulting services for the construction of regression testing
+    system for the scheduling manager and interface for a massively parallel
+    grid computing network.
+- :name: harbor
+  :start:
+    :year: 2011
+    :month: 9
+  :end:
+    :year: 2012
+    :month: 6
+  :organization: Harbor Presbyterian Church College Ministry
+  :title: Core Leadership/Logistical Coordinator
+  :description:
+    Practical experience in positions of head leadership over a large student
+    organization.  Dealt with working with diverse teams, effective listening,
+    and complex logistical coordination, and strategies for effective
+    communication.

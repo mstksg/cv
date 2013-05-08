@@ -7,7 +7,8 @@ module Templating
     { :education   => [
         { :institution => "University of California, San Diego",
           :title       => "B.S. Physics w/ Specialization in Computational Physics",
-          :date        => "Spring 2013"     }
+          :date        => "Spring 2013",
+          :comments    => "3.9 GPA" }
       ],
       :work_history  => (0..4).map { |year|
         { :year         => 2013-year                    , 
@@ -18,7 +19,7 @@ module Templating
           :to           => "May '#{13-year+1}"           }
       },
       :skills        => (1..12).map { |n| fake_person.title.split.sample },
-      :projects      => (1..12).map {
+      :projects      => (1..3).map {
         { :field       => fake_field                  , 
           :title       => fake_company.catch_phrase   , 
           :description => fake_paragraph(2)            }
