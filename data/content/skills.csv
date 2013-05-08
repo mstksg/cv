@@ -1,0 +1,34 @@
+SKILL                             | PRIMARY     | SECONDARY   | KEYWORD
+Hands-on Experimental Lab Work    | physics     | engineering | lab
+Numerical Methods                 | physics     | programming | lab
+Stochastic Methods                | physics     | analytics   | 
+Non-Linear Optics                 | physics     | engineering | 
+LabView                           | physics     | engineering | lab
+Image Processing                  | physics     | programming | lab
+Circuit Design/Fabrication        | physics     | engineering | lab
+Stress Testing                    | physics     | engineering | lab
+Matlab                            | physics     | analytics   | lab
+Python                            | physics     | programming | 
+Non-Linear Differential Equations | physics     | programming | 
+Computational Modeling            | physics     | programming | 
+Mathematica                       | physics     |             | lab
+Numerical Analysis                | physics     | programming | lab
+Java                              | programming | physics     | software
+C++                               | programming | physics     | software
+Unix/Linux                        | programming | physics     | systems
+Bash                              | programming | physics     | systems
+Version Control                   | programming |             | software
+SQL                               | programming |             | database
+Haskell                           | programming |             | 
+Regression Testing                | programming |             | software
+Server Administration             | programming |             | systems
+Awk                               | programming |             | systems
+Artificial Neural Networks        | analytics   | physics     | 
+Bayesian Probability Networks     | analytics   | programming | 
+Hidden Markov Chains              | analytics   | programming | 
+Ruby                              | web         | programming | 
+Javascript                        | web         |             | 
+jQuery                            | web         |             | 
+Web Design (HTML, CSS)            | web         |             | 
+LAMP Servers                      | web         |             | systems
+Microsft Excel                    | literacy    |             | 

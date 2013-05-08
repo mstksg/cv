@@ -14,6 +14,6 @@ module FakerHelpers
   end
 
   def fake_field
-    fake_company.catch_phrase.split[-2..-1].join(" ").capitalize
+    fake_company.bs.split[-2..-1].join(" ").capitalize
   end
 end
