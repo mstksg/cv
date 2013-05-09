@@ -1,34 +1,35 @@
 SKILL                             | PRIMARY     | SECONDARY   | KEYWORD
 Hands-on Experimental Lab Work    | physics     | engineering | lab
-Numerical Methods                 | physics     | programming | lab
-Stochastic Methods                | physics     | analytics   | 
+Computational Modeling            | physics     | programming | 
 Non-Linear Optics                 | physics     | engineering | 
 LabView                           | physics     | engineering | lab
 Image Processing                  | physics     | programming | lab
 Circuit Design/Fabrication        | physics     | engineering | lab
 Stress Testing                    | physics     | engineering | lab
 Matlab                            | physics     | analytics   | lab
+Stochastic Methods                | physics     | analytics   | 
 Python                            | physics     | programming | 
 Non-Linear Differential Equations | physics     | programming | 
-Computational Modeling            | physics     | programming | 
+Numerical Methods                 | physics     | programming | lab
 Mathematica                       | physics     |             | lab
 Numerical Analysis                | physics     | programming | lab
 Java                              | programming | physics     | software
 C++                               | programming | physics     | software
 Unix/Linux                        | programming | physics     | systems
 Bash                              | programming | physics     | systems
-Version Control                   | programming |             | software
-SQL                               | programming |             | database
-Haskell                           | programming |             | 
-Regression Testing                | programming |             | software
 Server Administration             | programming |             | systems
+Version Control                   | programming |             | software
+Regression Testing                | programming |             | software
+SQL                               | programming |             | database
 Awk                               | programming |             | systems
+Haskell                           | programming |             | 
 Artificial Neural Networks        | analytics   | physics     | 
+Hidden Markov Processes           | analytics   | programming | 
 Bayesian Probability Networks     | analytics   | programming | 
-Hidden Markov Chains              | analytics   | programming | 
+Machine Learning                  | analytics   | programming | 
+jQuery                            | web         |             | 
 Ruby                              | web         | programming | 
 Javascript                        | web         |             | 
-jQuery                            | web         |             | 
 Web Design (HTML, CSS)            | web         |             | 
 LAMP Servers                      | web         |             | systems
 Microsft Excel                    | literacy    |             | 

@@ -74,7 +74,19 @@
       .cv-card
         %h2
           Qualities
-        %p.cv-qualities_text= data[:qualities]
+        - data[:qualities].each do |quality|
+          %p.cv-qualities_text= quality
+
+    #cv-coursework.col.span_3_of_4.col_left.span_2_of_3.cv-box
+      .cv-card
+        %h2
+          Coursework
+        %ul
+          - data[:coursework].each do |course|
+            %li
+              %h6.cv-course_course= course[:course]
+              %h4.cv-course_title= course[:title]
+              %p.cv-course_desc= course[:description]
 
 :javascript
   window.data.watch = #{watch};

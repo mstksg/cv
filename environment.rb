@@ -7,6 +7,7 @@ require 'yaml'
 require 'pathname'
 require 'json'
 require 'logger'
+require 'smarter_csv'
 
 require_relative 'helpers/init'
 

@@ -1,5 +1,5 @@
 ---
-- :name: nexa
+nexa:
   :start:
     :year: 2009
     :month: 10
@@ -14,7 +14,7 @@
     scaling, research and integration of software libraries, and working
     with large teams, as well as sheer amounts of heavy scripting and
     programming.
-- :name: lhc
+lhc:
   :start:
     :year: 2010
     :month: 9
@@ -27,7 +27,7 @@
     Offered consulting services for the construction of regression testing
     system for the scheduling manager and interface for a massively parallel
     grid computing network.
-- :name: harbor
+harbor:
   :start:
     :year: 2011
     :month: 9
@@ -41,3 +41,14 @@
     organization.  Dealt with working with diverse teams, effective listening,
     and complex logistical coordination, and strategies for effective
     communication.
+lgr:
+  :start:
+    :year: 2012
+    :month: 7
+  :end:
+    :year: 2012
+    :month: 9
+  :organization: Los Gatos Research
+  :title: Research Assistant
+  :description:
+    LGR

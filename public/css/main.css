@@ -210,10 +210,20 @@ h6 {
 #cv-qualities {
   background-color: rgba(73,66,61,0.1);
 }
-
 #cv-qualities p {
   text-indent: 5%;
   margin-bottom: 0.5rem
+}
+
+#cv-coursework {
+  background-color: rgba(145,184,189,0.1);
+}
+#cv-coursework li {
+  margin: 0.5rem 0.25rem;
+  padding: 0.25rem;
+}
+#cv-coursework p {
+  text-indent: 3%;
 }
 
 @media only screen and (max-width: 480px) {

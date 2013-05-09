@@ -1,0 +1,42 @@
+---
+phys120:
+  :course: Phys 120A, Phys 121
+  :title: Practical Electronics and Experimental Techniques
+  :description:
+    Working with technologies such as LabView; experience with circuit design
+    and construction; learned practical design principles of PID feedback
+    systems and control theory.
+phys105:
+  :course: Phys 105A,B
+  :title: Computational and Mathematical Physics
+  :description:
+    The theory of differential equations and practical knowledge of numerical
+    computation necessary for working with advanced physical theory and
+    application.
+math170:
+  :course: Math 170A,B,C
+  :title: Numerical Analysis, Matrix Computations & Computational Theory
+  :description:
+    Explored the theory and limits behind numerical computation; studied 
+    current advanced numerical methods and algorithms for optimizing
+    large-scale scientific computing.
+cse150:
+  :course: CSE 150
+  :title: Artificial Intelligence and Machine Learning
+  :description:
+    Expansive coverage of the ongoing fields of research in Machine Learning,
+    including in-depth study in construction, training, and applications of
+    Hidden Markov Chains, Bayesian Networks, and Artificial Neural Networks.
+phys140:
+  :course: Phys 140A
+  :title: Statistical Mechanics and Thermodynamics
+  :description:
+    Advanced understanding of stochastic and thermal ensembles, emphasizing
+    interdisciplinary applications in information theory and computational
+    methodologies.
+phys100:
+  :course: Phys 100A,B,C
+  :title: Electromagnetism
+  :description:
+    Knowledge in the theory of Classical Electrodynamics, including waveguides
+    and the applied theories of potentials, gauges, and tensors.

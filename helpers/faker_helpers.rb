@@ -16,4 +16,8 @@ module FakerHelpers
   def fake_field
     fake_company.bs.split[-2..-1].join(" ").capitalize
   end
+
+  def fake_course
+    "#{%w{ MATH PHYS CSE }.sample} #{(rand*100+100).to_i}"
+  end
 end

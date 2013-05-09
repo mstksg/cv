@@ -1,13 +1,16 @@
 ---
-- :institution: University of California, San Diego
+ucsd:
+  :institution: University of California, San Diego
   :title: B.S. Physics w/ Specialization in Computational Physics
   :date: Spring 2013
   :comments:
-- :institution: ETS GRE
+gre:
+  :institution: ETS GRE
   :title: Physics GRE (740) / General GRE (165/164)
   :date: Winter 2012
   :comments:
-- :institution: El Modena High School
+elmo:
+  :institution: El Modena High School
   :title: High School Diploma
   :date: Spring 2009
   :comments: 4.5 GPA
