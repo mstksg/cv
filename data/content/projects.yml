@@ -1,6 +1,24 @@
 ---
-test:
-  :field: Ruby
-  :title: Test
+synth:
+  :field: Electronics
+  :title: Monophonic Analog Synthesizer
   :description:
-    Yo
+    Musical synthesizer, with adjustable and modular low-frequency oscillator,
+    built from scratch with fundamental/simple circuit components (resistors,
+    capacitors, tansistors, and operational amps).  Could proudly carry a
+    decent tune.
+map:
+  :field: Machine Learning / Clustering
+  :title: Self-Organizing Maps
+  :description:
+    Applying physical models to generate visualizations of complex
+    multi-dimensional relational graphs as projections onto a two-dimensional
+    mapping, based on self-organizing emergent principles, and recovering
+    distinct clusters from the data.
+net:
+  :field: Machine Learning / Neural Networks
+  :title: Neural Network-Based AI Game Player
+  :description:
+    A modular construct/system for applying principles of Artificual Neural
+    Networks to different games &mdash; of both deterministic/non-deterministic
+    and perfect/imperfect information varieties.

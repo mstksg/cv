@@ -21,6 +21,7 @@ body {
 p {
   font-size: 0.9rem;
   line-height: 130%;
+  /* text-align: justify; */
 }
 
 #header_container, #main_container, #footer_container {
@@ -70,7 +71,7 @@ h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.5rem
+  margin-bottom: 0.5rem;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
@@ -163,6 +164,7 @@ h6 {
 }
 #cv-work_history p {
   margin-bottom: 0.2rem;
+  text-align: right;
 }
 .cv-work_date {
   font-size: 0.9rem;

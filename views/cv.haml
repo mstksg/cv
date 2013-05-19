@@ -62,13 +62,15 @@
     #cv-project_history.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
         %h2
-          Personal Project History
+          Personal Projects
         %ul
           - data[:projects].each do |project|
             %li
               %h6.cv-proj_field= project[:field]
               %h4.cv-proj_title= project[:title]
-              %p.cv-proj_desc= project[:description]
+              %p.cv-proj_desc
+                :markdown
+                  #{project[:description]}
 
     #cv-qualities.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
@@ -80,13 +82,15 @@
     #cv-coursework.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
         %h2
-          Coursework
+          University Coursework
         %ul
           - data[:coursework].each do |course|
             %li
               %h6.cv-course_course= course[:course]
               %h4.cv-course_title= course[:title]
               %p.cv-course_desc= course[:description]
+        :markdown
+          hey
 
 :javascript
   window.data.watch = #{watch};
