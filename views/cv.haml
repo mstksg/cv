@@ -57,7 +57,7 @@
           Skills
         %ul
           - data[:skills].each do |skill|
-            %li= skill
+            %li{ :class => "cv-skill_#{skill[:category]}" }= skill[:skill]
 
     #cv-project_history.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card

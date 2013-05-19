@@ -10,7 +10,8 @@ module Templating
     @content[:education] = YAML.load_file('data/content/education.yml')
     @content[:work_history] = YAML.load_file('data/content/work_history.yml')
     @content[:projects] = YAML.load_file('data/content/projects.yml')
-    @content[:skills] = SmarterCSV.process('data/content/skills.csv')
+    @content[:skills] = SmarterCSV.process('data/content/skills.csv',
+                                            :col_sep => '|')
     @content[:qualities] = YAML.load_file('data/content/qualities.yml')
     @content[:coursework] = YAML.load_file('data/content/coursework.yml')
 
@@ -64,9 +65,33 @@ module Templating
       }
     end
 
+    template[:skills] = select_skills(view_yaml[:template][:skills])
+
     template[:qualities] = content[:qualities][view_yaml[:template][:qualities]]
 
     template
+  end
+
+  # def select_skills_mix(distribution)
+  #   distskills = distribution.map do |dist|
+  #     content[:skills].select { |s| s[:primary] == dist[:category] }.first(dist[:amount]).reverse
+  #   end.reverse
+
+  #   max_dist = distribution.map { |d| d[:amount] }.max
+
+  #   ([nil]*max_dist).zip(*distskills).flatten.select { |s| s }.map { |s| s[:skill] }.reverse
+  # end
+
+  def select_skills(distribution)
+    # distribution.map do |dist|
+    #   content[:skills].select { |s| s[:primary] == dist[:category] }.first(dist[:amount])
+    # end.flatten.map { |s| s[:skill] }
+    
+    distribution.each_with_index.map do |dist,i|
+      content[:skills].select { |s| s[:primary] == dist[:category] }.first(dist[:amount]).map do |s|
+        { :skill => s[:skill], :category => i }
+      end
+    end.flatten
   end
 
   def lorem

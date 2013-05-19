@@ -3,5 +3,5 @@ task :environment do
 end
 
 task :shotgun do
-  sh "shotgun config.ru -o 0.0.0.0 -p 4568"
+  sh "shotgun config.ru -o 0.0.0.0 -p 4267"
 end

@@ -34,13 +34,13 @@ harbor:
   :end:
     :year: 2012
     :month: 6
-  :organization: Harbor Presbyterian Church College Ministry
+  :organization: Harbor Church College Ministry
   :title: Core Leadership/Logistical Coordinator
   :description:
     Practical experience in positions of head leadership over a large student
-    organization.  Dealt with working with diverse teams, effective listening,
-    and complex logistical coordination, and strategies for effective
-    communication.
+    organization.  Dealt with working with and leading diverse teams,
+    effective listening, and complex logistical coordination, and strategies
+    for effective communication.
 lgr:
   :start:
     :year: 2012
@@ -49,6 +49,21 @@ lgr:
     :year: 2012
     :month: 9
   :organization: Los Gatos Research
+  :title: SBIR Research Assistant
+  :description:
+    Team member in multiple Small Business Innovation Research (SBIR) groups;
+    full-time position in numerical computation, modeling and analyzing
+    complex non-linear systems.  Worked in embedded systems programming,
+    deployment, and stress testing.  Acquired comfort in a research
+    environment with its goals and deadlines.
+doug:
+  :start:
+    :year: 2013
+    :month: 1
+  :end:
+    :year: 2013
+    :month: 5
+  :organization: UCSD Department of Physics
   :title: Research Assistant
   :description:
-    LGR
+    I didn't do anything lol.

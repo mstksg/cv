@@ -1,14 +1,13 @@
 SKILL                             | PRIMARY     | SECONDARY   | KEYWORD
 Hands-on Experimental Lab Work    | physics     | engineering | lab
 Computational Modeling            | physics     | programming | 
-Nonlinear Optics                  | physics     | engineering | 
+Non-Linear Optics                 | physics     | engineering | 
 LabView                           | physics     | engineering | lab
 Circuit Design/Fabrication        | physics     | engineering | lab
 Matlab                            | physics     | analytics   | lab
 Stochastic Methods                | physics     | analytics   | 
-Fortran                           | physics     | programming | 
 Python                            | physics     | programming | 
-Digital Image Processing          | physics     | programming | lab
+Image Processing                  | physics     | programming | lab
 Non-Linear Differential Equations | physics     | programming | 
 Numerical Methods                 | physics     | programming | lab
 Stress Testing                    | physics     | engineering | lab
@@ -25,13 +24,12 @@ Version Control                   | programming |             | software
 Awk                               | programming |             | systems
 Haskell                           | programming |             | 
 Artificial Neural Networks        | analytics   | physics     | 
-Hidden Markov Models              | analytics   | programming | 
+Hidden Markov Processes           | analytics   | programming | 
 Bayesian Probability Networks     | analytics   | programming | 
 Machine Learning                  | analytics   | programming | 
 jQuery                            | web         |             | 
 Ruby                              | web         | programming | 
 Javascript                        | web         |             | 
-Web Application Development       | web         |             | 
-HTML 5                            | web         |             | 
+Web Design (HTML, CSS)            | web         |             | 
 LAMP Servers                      | web         |             | systems
 Microsft Excel                    | literacy    |             | 
