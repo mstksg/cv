@@ -4,6 +4,14 @@
     #cv-name.col.span_3_of_4.col_left
       %h1
         Justin Le
+      %ul#cv-views
+        - template_index.keys.each do |k|
+          - if k == data[:view]
+            %li.cv-view_selected
+              %a{:href => url("/#{k}")}= k.capitalize
+          - else
+            %li
+              %a{:href => url("/#{k}")}= k.capitalize
     #cv-photo_container.col.col_right.span_1_of_4
       %img#cv-photo{ :src => url('http://placehold.it/300x300.png') ,
                       :alt => 'Justin Le' }
@@ -48,16 +56,19 @@
             %h3.cv-work_year= work[:year]
             %h4.cv-work_org= work[:organization]
             %h5.cv-work_title= work[:title]
-            %p.cv-work_desc= work[:description]
+            %p.cv-work_desc
+              :markdown
+                #{work[:description]}
             .cv-work_date= "#{work[:from]} to #{work[:to]}"
 
     #cv-skills.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
         %h2
           Skills
+        %h5= data[:view].capitalize
         %ul
           - data[:skills].each do |skill|
-            %li{ :class => "cv-skill_#{skill[:category]}" }= skill[:skill]
+            %li{ :class => "cv-primary_#{skill[:primary]} cv-secondary_#{skill[:secondary]}" }= skill[:skill]
 
     #cv-project_history.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
@@ -77,7 +88,9 @@
         %h2
           Qualities
         - data[:qualities].each do |quality|
-          %p.cv-qualities_text= quality
+          %p.cv-qualities_text
+            :markdown
+              #{quality}
 
     #cv-coursework.col.span_3_of_4.col_left.span_2_of_3.cv-box
       .cv-card
@@ -88,9 +101,9 @@
             %li
               %h6.cv-course_course= course[:course]
               %h4.cv-course_title= course[:title]
-              %p.cv-course_desc= course[:description]
-        :markdown
-          hey
+              %p.cv-course_desc
+                :markdown
+                  #{course[:description]}
 
 :javascript
   window.data.watch = #{watch};

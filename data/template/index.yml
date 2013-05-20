@@ -1,0 +1,31 @@
+---
+:general:
+  - ""
+  - default
+  - general
+:physics:
+  - p
+  - ph
+  - phys
+  - physics
+:programming:
+  - c
+  - code
+  - coding
+  - pr
+  - prog
+  - programming
+  - software
+  - s
+:engineering:
+  - e
+  - eng
+  - engineering
+:analytics:
+  - a
+  - analysis
+  - analytics
+  - data
+:web:
+  - web
+  - w

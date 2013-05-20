@@ -1,29 +1,41 @@
 module Templating
-  def template_data(view="default")
-    return lorem.merge(render_template)
+  def template_data(view="general")
+    return lorem.merge(render_template(view))
   end
 
-  def content
-    return @content if @content
+  def cv_content
+    return @cv_content if @cv_content
 
-    @content = {}
-    @content[:education] = YAML.load_file('data/content/education.yml')
-    @content[:work_history] = YAML.load_file('data/content/work_history.yml')
-    @content[:projects] = YAML.load_file('data/content/projects.yml')
-    @content[:skills] = SmarterCSV.process('data/content/skills.csv',
+    @cv_content = {}
+    @cv_content[:education] = YAML.load_file('data/content/education.yml')
+    @cv_content[:work_history] = YAML.load_file('data/content/work_history.yml')
+    @cv_content[:projects] = YAML.load_file('data/content/projects.yml')
+    @cv_content[:skills] = SmarterCSV.process('data/content/skills.csv',
                                             :col_sep => '|')
-    @content[:qualities] = YAML.load_file('data/content/qualities.yml')
-    @content[:coursework] = YAML.load_file('data/content/coursework.yml')
+    @cv_content[:qualities] = YAML.load_file('data/content/qualities.yml')
+    @cv_content[:coursework] = YAML.load_file('data/content/coursework.yml')
 
-    return @content
+    return @cv_content
   end
 
-  def render_template(view="default")
-    view_yaml = YAML.load_file("data/template/#{view}.yml")
+  def template_index
+    return @template_index if @template_index
+    @template_index = YAML.load_file('data/template/index.yml')
+    return @template_index
+  end
+
+  def select_template(view="general")
+    template_index.keys.select { |k| template_index[k].include? view }.first || :general
+  end
+
+  def render_template(view="general")
+    view_name = select_template(view)
+    view_yaml = YAML.load_file("data/template/#{view_name}.yml")
     template = {}
 
+    template[:view] = view_name
     template[:education] = view_yaml[:template][:education].map do |e|
-      edu_content = content[:education][e]
+      edu_content = cv_content[:education][e]
       {
         :institution => edu_content[:institution],
         :title => edu_content[:title],
@@ -33,7 +45,7 @@ module Templating
     end
 
     template[:work_history] = view_yaml[:template][:work_history].map do |w|
-      work_content = content[:work_history][w]
+      work_content = cv_content[:work_history][w]
 
       {
         :organization => work_content[:organization],
@@ -48,7 +60,7 @@ module Templating
     end
 
     template[:projects] = view_yaml[:template][:projects].map do |p|
-      proj_content = content[:projects][p]
+      proj_content = cv_content[:projects][p]
       {
         :field => proj_content[:field],
         :title => proj_content[:title],
@@ -57,7 +69,7 @@ module Templating
     end
 
     template[:coursework] = view_yaml[:template][:coursework].map do |c|
-      course_content = content[:coursework][c]
+      course_content = cv_content[:coursework][c]
       {
         :course => course_content[:course],
         :title => course_content[:title],
@@ -67,7 +79,7 @@ module Templating
 
     template[:skills] = select_skills(view_yaml[:template][:skills])
 
-    template[:qualities] = content[:qualities][view_yaml[:template][:qualities]]
+    template[:qualities] = cv_content[:qualities][view_yaml[:template][:qualities]]
 
     template
   end
@@ -83,15 +95,13 @@ module Templating
   # end
 
   def select_skills(distribution)
-    # distribution.map do |dist|
-    #   content[:skills].select { |s| s[:primary] == dist[:category] }.first(dist[:amount])
-    # end.flatten.map { |s| s[:skill] }
-    
-    distribution.each_with_index.map do |dist,i|
-      content[:skills].select { |s| s[:primary] == dist[:category] }.first(dist[:amount]).map do |s|
-        { :skill => s[:skill], :category => i }
+    distribution.map do |dist|
+      primaries = cv_content[:skills].select { |s| s[:primary] == dist[:category] }
+      secondaries = cv_content[:skills].select { |s| s[:secondary] == dist[:category] }
+      (primaries+secondaries).first(dist[:amount]).map do |s|
+        { :skill => s[:skill], :primary => s[:primary], :secondary => s[:secondary] }
       end
-    end.flatten
+    end.flatten.uniq { |s| s[:skill] }
   end
 
   def lorem

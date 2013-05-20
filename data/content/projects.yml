@@ -22,3 +22,9 @@ net:
     A modular construct/system for applying principles of Artificual Neural
     Networks to different games &mdash; of both deterministic/non-deterministic
     and perfect/imperfect information varieties.
+battle:
+  :field: Simulation
+  :title: Stochastic Evolutionary Simulations
+  :description:
+    Various simulations exploring evolutionary algorithms with non-analytic
+    fitness factors, including many experiments on mutable AI.

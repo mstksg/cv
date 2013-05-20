@@ -1,0 +1,31 @@
+---
+:template:
+  :education:
+    - ucsd
+    - gre
+  :work_history:
+    - lgr
+    - harbor
+    - lhc
+    - nexa
+  :skills:
+    - :category: programming
+      :amount: 100
+    - :category: web
+      :amount: 3
+    - :category: analytics
+      :amount: 3
+    - :category: physics
+      :amount: 0
+  :projects:
+    - synth
+    - map
+    - net
+  :qualities:
+    default
+  :coursework:
+    - phys120
+    - phys105
+    - cse150
+    - math170
+    - phys140

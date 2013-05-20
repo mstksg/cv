@@ -98,6 +98,26 @@ h6 {
   text-shadow: 1px 1px 0 #fafafa;
 }
 
+#cv-views {
+  /* text-align: center; */
+}
+#cv-views li {
+  display: inline-block;
+  padding: auto 0.25em;
+  margin: auto 0.25em;
+  font-size: 0.9rem;
+}
+#cv-views a {
+  color: #2B2521;
+  text-decoration: none;
+}
+#cv-views a:hover {
+  font-weight: 700;
+}
+.cv-view_selected {
+  font-weight: 700;
+}
+
 #cv-photo {
   display: inline-block;
   height: 10rem;
@@ -174,8 +194,11 @@ h6 {
 #cv-skills {
   background-color: rgba(203,228,237,0.25);
 }
+#cv-skills h5 {
+  /* text-align: right; */
+}
 #cv-skills ul {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   text-align: center;
   cursor: default;
 }
@@ -233,6 +256,9 @@ h6 {
     margin: 0 0;
   }
   h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  #cv-views {
     text-align: center;
   }
   #cv-photo_container {

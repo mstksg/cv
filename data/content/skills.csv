@@ -1,21 +1,22 @@
 SKILL                             | PRIMARY     | SECONDARY   | KEYWORD
 Hands-on Experimental Lab Work    | physics     | engineering | lab
-Computational Modeling            | physics     | programming | 
+Computational Modeling            | physics     | engineering | 
 Nonlinear Optics                  | physics     | engineering | 
 LabView                           | physics     | engineering | lab
 Circuit Design/Fabrication        | physics     | engineering | lab
-Matlab                            | physics     | analytics   | lab
+Matlab                            | physics     | engineering | lab
 Stochastic Methods                | physics     | analytics   | 
-Fortran                           | physics     | programming | 
 Python                            | physics     | programming | 
-Digital Image Processing          | physics     | programming | lab
-Non-Linear Differential Equations | physics     | programming | 
-Numerical Methods                 | physics     | programming | lab
+Fortran                           | physics     | programming | 
+Digital Image Processing          | physics     | analytics   | lab
+Non-Linear Differential Equations | physics     | engineering | 
+Numerical Methods                 | physics     | engineering | lab
 Stress Testing                    | physics     | engineering | lab
 Mathematica                       | physics     |             | lab
-Numerical Analysis                | physics     | programming | lab
+Numerical Analysis                | physics     | engineering | lab
 C++                               | programming | physics     | software
 Java                              | programming | physics     | software
+Object-Oriented Design            | programming |             | software
 Unix/Linux                        | programming | physics     | systems
 Server Administration             | programming |             | systems
 SQL                               | programming |             | database
@@ -25,8 +26,8 @@ Version Control                   | programming |             | software
 Awk                               | programming |             | systems
 Haskell                           | programming |             | 
 Artificial Neural Networks        | analytics   | physics     | 
-Hidden Markov Models              | analytics   | programming | 
-Bayesian Probability Networks     | analytics   | programming | 
+Hidden Markov Models              | analytics   |             | 
+Bayesian Probability Networks     | analytics   |             | 
 Machine Learning                  | analytics   | programming | 
 jQuery                            | web         |             | 
 Ruby                              | web         | programming | 
