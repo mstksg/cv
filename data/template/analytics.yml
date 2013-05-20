@@ -18,9 +18,9 @@
     - :category: web
       :amount: 3
   :projects:
-    - synth
     - map
     - net
+    - evo
   :qualities:
     default
   :coursework:

@@ -18,9 +18,9 @@
     - :category: physics
       :amount: 0
   :projects:
-    - synth
     - map
     - net
+    - evo
   :qualities:
     default
   :coursework:

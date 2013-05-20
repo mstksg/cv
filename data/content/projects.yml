@@ -22,7 +22,7 @@ net:
     A modular construct/system for applying principles of Artificual Neural
     Networks to different games &mdash; of both deterministic/non-deterministic
     and perfect/imperfect information varieties.
-battle:
+evo:
   :field: Simulation
   :title: Stochastic Evolutionary Simulations
   :description:
