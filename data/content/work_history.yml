@@ -67,3 +67,19 @@ doug:
   :title: Research Assistant
   :description:
     I didn't do anything lol.
+lgr2:
+  :start:
+    :year: 2013
+    :month: 6
+  :end:
+    :year: 2013
+    :month: 9
+  :organization: Los Gatos Research
+  :title: Control Systems Engineer
+  :description:
+    Design, simulation, development, programming, and construction of
+    sensitive control system modules for high-performance applications.
+    Worked with the designing of hybrid Analog-Digital systems.  Acquired
+    experience in seeing through a complex engineering project from start to
+    finish.
+
