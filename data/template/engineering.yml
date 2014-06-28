@@ -1,6 +1,7 @@
 ---
 :template:
   :education:
+    - chapman
     - ucsd
     - gre
   :work_history:

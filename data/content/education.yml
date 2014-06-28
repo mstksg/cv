@@ -1,8 +1,12 @@
 ---
+chapman:
+  :institution: Chapman University
+  :title: Ph.D. Computational & Data Sciences (Schmid College of Science and Technology)
+  :date: In Progress
 ucsd:
   :institution: University of California, San Diego
-  :title: B.S. Physics w/ Specialization in Computational Physics
-  :date: Spring 2013
+  :title: B.S. Physics w/ Specialization in Computational Physics; Minor in Computer Science
+  :date: Spring 2014
   :comments:
 gre:
   :institution: ETS GRE
@@ -13,4 +17,4 @@ elmo:
   :institution: El Modena High School
   :title: High School Diploma
   :date: Spring 2009
-  :comments: 4.5 GPA
+  :comments:
